@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopSound</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./stylee.css">
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="./gallery.css">
+
+
+
+    <!-- Font Awesome -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" /> -->
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" /> -->
+    <!-- MDB -->
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css" rel="stylesheet" /> -->
+
+</head>
+
+<body>
+    <!--Main Navigation-->
+    <header>
+        <style>
+            #intro {
+                background-image: url("./img/top.jpg");
+                height: 80vh;
+            }
+
+            /* Height for devices larger than 576px */
+            @media (min-width: 992px) {
+                #intro {
+                    margin-top: -58.59px;
+                }
+            }
+
+            .navbar .nav-link {
+                color: #fff !important;
+            }
+        </style>
+
+        <!-- Navbar -->
+        <!-- <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+            <div class="container-fluid">
+                <a class="navbar-brand nav-link px-4" target="_blank" href="">
+                    <strong>TopSound</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarExample01"
+                    aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarExample01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="#intro">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" rel="nofollow" target="_blank">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" target="_blank">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" target="_blank">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="" target="_blank">Services</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav d-flex flex-row">
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA"
+                                rel="nofollow" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="https://www.facebook.com/mdbootstrap" rel="nofollow"
+                                target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="https://twitter.com/MDBootstrap" rel="nofollow" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item me-3 me-lg-0">
+                            <a class="nav-link" href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow"
+                                target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> -->
+        <!-- Navbar -->
+
+        <!-- <nav class="navbar sticky-top navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#">Navbar</a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav> -->
+
+
+              <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                  data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+    
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#!">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#!">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#!">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#!">Contact</a>
+              </li>
+            </ul>
+    
+            <ul class="navbar-nav flex-row">
+              <!-- Icons -->
+              <li class="nav-item">
+                <a class="nav-link pe-2" href="#!">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-2" href="#!">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link px-2" href="#!">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ps-2" href="#!">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Collapsible wrapper -->
+    
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <!-- Navbar -->
+
+        <!-- Background image -->
+        <div id="intro" class="bg-image shadow-2-strong">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.5);">
+                <div class="container d-flex align-items-center justify-content-center text-center h-100">
+                    <div class="text-white" data-mdb-theme="dark">
+                        <h1 class="mb-3">TopSound Entertainment Ltd</h1>
+                        <h5 class="mb-4">Audio & Visual Solutions</h5>
+                        <a class="btn btn-outline-light btn-lg m-2" style="background-color: aliceblue; color: black;"
+                            data-mdb-ripple-init href="" target="_blank" role="button">Click to make Booking</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Background image -->
+    </header>
+    <!--Main Navigation-->
+
+    <section>
+        <section class="py-3 py-md-5 py-xl-8">
+            <div class="container">
+                <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+                    <div class="col-12 col-lg-6 col-xl-5">
+                        <img class="img-fluid rounded" loading="lazy" src="./img/martin.jpg" alt="">
+                        <div style="font-weight: bold;">
+                            <p class="p-3">Martin Mugambi <br>
+                                Executive Director</p>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-7">
+                        <div class="row justify-content-xl-center">
+                            <div class="col-12 col-xl-11">
+                                <h2 class="hi mb-3">About Us</h2>
+                                <p> Welcome & thank you for choosing us as the
+                                    leading entertainment service provider.
+                                </p>
+                                <p> Our Company’s purpose is to provide professional
+                                    and quality entertainment. This has been evident
+                                    since the formation of our company when our
+                                    founders set out to build a premium quality
+                                    service company.
+                                </p>
+                                <p>
+                                    The values we share are embodied in what goes
+                                    on at Top Sound Entertainment from day to day.
+                                    Team members must exhibit ethical, professional
+                                    and honest behavior as we in turn oﬀer a fair,
+
+                                    diverse, safe &
+                                    healthy workplace. We believe
+                                    that in such an environment, sound decision
+                                    making and eﬀective strategies ﬂow naturally
+                                    from the give-and-take of daily business
+                                    engagements among all team members.
+                                </p>
+                                <p> Our clients, including you are not just numbers;
+                                    they are part of our extended family who are
+                                    constantly seeking high quality & highly tailored
+                                    entertainment services.
+                                </p>
+                                <P> I invite you to take advantage of our insider
+                                    expertise in the entertainment industry & to
+                                    embark with us on a journey full of endless
+                                    possibilities.
+                                </P>
+                                <P>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="container mb-5">
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-center" style="font-weight: bold; font-size: large;">Vision</h5>
+                    <p class="card-text text-center">To create inspiring convention, exposition & entertainment
+                        experiences that exceed our customers’ expectations in an innovative & sustainable</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="title text-center" style="font-weight: bold; font-size: large;">Mission</h5>
+                    <p class="card-text text-center">To provide high-quality entertainment services and experiences that
+                        inspire, entertain, and enrich people's lives</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-center" style="font-weight: bold; font-size: large;">Core Values</h5>
+                    <p class="card-text">
+                        <p class="text-center">
+                            Creativity <br>
+                            Quality <br>
+                            Innovation
+                        </p>
+                        <!-- <ul class="px-5">
+                        <li>
+                            <span style="color: black;">Creativity:</span>
+                            We encourage and foster creativity in all aspects of our business, from the development of
+                            new entertainment concepts to the production and delivery of its services.
+                        </li>
+                        <li>
+                            <span style="color: black;">Quality:</span>
+                            We are committed to providing high-quality entertainment experiences that meet or exceed the
+                            expectations of our audience and clients.
+                        </li>
+                        <li>
+                            <span style="color: black;">Innovation:</span>
+                            We embrace innovation and constantly seek to explore new ideas and approaches in
+                            entertainment.
+                        </li>
+                    </ul> -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--about us section-->
+    <!-- <section class="about" style="background-color: grey;">
+        <div class="">
+            <h1 class="text-uppercase text-center"
+                style="color: white; font-size: 250%; margin-bottom: -50px; padding-top: 20px; padding-left: 40px;">
+                about us</h1>
+
+            <div class="grid row" style="background-color: brown;">
+                <div class="col g-col-6" style="background-color: #996515; color: white; margin-top: 100px;">
+                    <h3 style="color: black;">INTRODUCTION</h3>
+                    <p class="px-5">Topsound Entertainment is a leading entertainment company that
+                        <br> specializes in producing, promoting, and managing a variety of
+                        <br> entertainment events with a focus on creativity, innovation, and excellence.
+                        <br>
+                        Topsound Entertainment
+                        strives to deliver unforgettable experiences to our
+                        <br> clients. Our approach is mainly focused on the customer’s needs and the
+                        <br> quality of service.
+                        <br>
+                        Our team is skilled at creating memorable experiences. We work hard
+                        to
+                        <br> meet your expectations, and we're always here to help build strong
+                        <br> relationships with our clients. We're dedicated to making sure each and
+                        <br>
+                        every one of our customers feels valued and appreciated.
+                    </p>
+                    <h3 style="color: black;">OUR VISION:</h3>
+                    <p class="px-5">To create inspiring convention, exposition and entertainment experiences
+                        <br> that exceed our customers’ expectations in an innovative and sustainable
+                        <br>
+                        way.
+                    </p>
+                    <h3 style="color: black;">OUR MISSION:</h3>
+                    <p class="px-5">To provide high-quality entertainment services and experiences that inspire,
+                        <br> entertain, and enrich people's lives
+                    </p>
+                    <h3 style="color: black;">OUR CORE VALUES:</h3>
+                    <ul class="px-5">
+                        <li>
+                            <span style="color: black;">Creativity:</span>
+                            We encourage and foster creativity in all aspects of our business, from the development of
+                            new entertainment concepts to the production and delivery of its services.
+                        </li>
+                        <li>
+                            <span style="color: black;">Quality:</span>
+                            We are committed to providing high-quality entertainment experiences that meet or exceed the
+                            expectations of our audience and clients.
+                        </li>
+                        <li>
+                            <span style="color: black;">Innovation:</span>
+                            We embrace innovation and constantly seek to explore new ideas and approaches in
+                            entertainment.
+                        </li>
+                    </ul>
+                    <h3 style="color: black;">MEMBERS OF STAFF.</h3>
+                    <p class="px-5">We have a professional and engaging staff who are highly skilled,
+                        <br> experienced and spectacularly resourceful..
+                    </p>
+                    <h3 style="color: black;">OUR CLIENTS</h3>
+                    <p class="px-5">The people we serve are our greatest precedence. Our services are tailored
+                        <br> to the specifications of our clients’ expectations.
+                    </p>
+                </div>
+                <div class="col g-col-6" style="background-color: bisque;">
+                    <div class="container">
+                        <div class="circle" style="background-image: url('./img/martin.jpg');"></div>
+                    </div>
+                    <div class="mx-2 px-5">
+                        <p> Welcome and thank you for choosing us as the
+                            <br> leading entertainment service provider.
+                        </p>
+                        <p> Our Company’s purpose is to provide professional
+                            <br> and quality entertainment. This has been evident
+                            <br> since the formation of our company when our
+                            <br> founders set out to build a premium quality
+                            <br> service company.
+                        </p>
+                        <p>
+                            The values we share are embodied in what goes
+                            <br> on at Top Sound Entertainment from day to day.
+                            <br> Team members must exhibit ethical, professional
+                            <br> and honest behavior as we in turn oﬀer a fair,
+                            <br>
+                            diverse, safe and
+                            healthy workplace. We believe
+                            <br> that in such an environment, sound decision
+                            <br> making and eﬀective strategies ﬂow naturally
+                            <br> from the give-and-take of daily business
+                            <br> engagements among all team members.
+                        </p>
+                        <p> Our clients, including you are not just numbers;
+                            <br> they are part of our extended family who are
+                            <br> constantly seeking high quality and highly tailored
+                            <br> entertainment services.
+                        </p>
+                        <P> I invite you to take advantage of our insider
+                            <br> expertise in the entertainment industry and to
+                            <br> embark with us on a journey full of endless
+                            <br> possibilities”.
+                        </P>
+                        <P>
+                            <span class="fw-bold">Martin Mugambi</span> - Executive Director
+                            <br>
+                            <span class="fw-bold">TopSound Entertainment Ltd</span>
+                        </P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!--about us section-->
+
+    <div class="">
+        <iframe style="width: 100%; height: 300px;" src="./slider.html" frameborder=""></iframe>
+    </div>
+
+    <!--new gallery section-->
+    <div class="gallery">
+        <div class="">
+            <img class="img-fluid" src="./img/events/chair.jpg" alt="">
+        </div>
+        <div class="v-stretch">
+            <img class="img-fluid" src="./img/events/drums.jpg" alt="">
+        </div>
+        <div class="h-stretch">
+            <img class="img-fluid" src="./img/events/deckk.jpg" alt="">
+        </div>
+        <div class="">
+            <img class="img-fluid" src="./img/events/marto.jpg" alt="">
+        </div>
+        <div class="">
+            <img class="img-fluid" src="./img/events/topsound.jpg" alt="">
+        </div>
+        <div class="v-stretch">
+            <img class="img-fluid" src="./img/events/gava.jpg" alt="">
+        </div>
+        <div class="big-stretch">
+            <img class="img-fluid" src="./img/events/church.jpg" alt="">
+        </div>
+        <div class="">
+            <img class="img-fluid" src="./img/events/annual.jpg" alt="">
+        </div>
+        <div class="h-stretch">
+            <img class="img-fluid" src="./img/events/red.jpg" alt="">
+        </div>
+        <div class="">
+            <img class="img-fluid" src="./img/events/stage.jpg" alt="">
+        </div>
+        <div class="">
+            <img class="img-fluid" src="./img/events/church.jpg" alt="">
+        </div>
+        <div class="">
+            <img class="img-fluid" src="./img/events/assembly.jpg" alt="">
+        </div>
+        <div class="v-stretch">
+            <img class="img-fluid" src="./img/events/speakers.jpg" alt="">
+        </div>
+        <div class="">
+            <img class="img-fluid" src="./img/events/stage2.jpg" alt="">
+        </div>
+        <div class="big-stretch">
+            <img class="img-fluid" src="./img/events/station.jpg" alt="">
+        </div>
+        <div class="">
+            <img src="./img/events/bigtent.jpg" alt="">
+        </div>
+        <div class="h-stretch">
+            <img class="img-fluid" src="./img/events/blacktent.jpg" alt="">
+        </div>
+        <div class="">
+            <img class="img-fluid" src="./img/events/diplomatic.jpg" alt="">
+        </div>
+        <div class="big-stretch">
+            <img class="img-fluid" src="./img/events/field.jpg" alt="">
+        </div>
+        <div class="">
+            <img class="img-fluid" src="./img/events/love.jpg" alt="">
+        </div>
+        <div class="">
+            <img class="img-fluid" src="./img/events/tv.jpg" alt="">
+        </div>
+        <div class="v-stretch">
+            <img class="img-fluid" src="./img/events/day.jpg" alt="">
+        </div>
+        <div class="h-stretch">
+            <img class="img-fluid" src="./img/events/range.jpg" alt="">
+        </div>
+        <div class="h-stretch">
+            <img class="img-fluid" src="./img/events/room.jpg" alt="">
+        </div>
+    </div>
+    <!--new gallery section-->
+    <!--our services-->
+    <!-- <section class="ours">
+        <div class="pt-5">
+            <div class="solid-white-line"></div>
+            <div class="rectangle">
+                <div class="text-center">
+                    <h3 class="heading1">our services</h3>
+                    <h3 class="heading2">our services</h3>
+                    <h3 class="heading3">our services</h3>
+                    <h3 class="heading4">our services</h3>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!--our services end-->
+
+    <section>
+        <div>
+            <div class="row">
+                <div class="col m-3" style="background-color: greenyellow;">
+                    <div class="fidle">
+                        <p class="text-center pt-5" style="font-size: 24px;"><strong><br>01) Event & Music <br>
+                                Concert Livestream</strong></p>
+                    </div>
+                </div>
+                <div class="col m-3">
+                    <img class="img-fluid" style="background-size: 100% 100%;" src="./img/dj.jpg" alt="">
+                </div>
+                <div class="col m-3" style="background-color: #0082ca;">
+                    <div class="fidlee">
+                        <p class="text-center pt-5" style="font-size: 24px;"><strong><br>03) Video and Audio
+                                <br>Recording studio</strong></p>
+                    </div>
+                </div>
+                <div class="col m-3">
+                    <img class="img-fluid" style="background-size: 100% 100%;" src="./img/dj.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col m-3">
+                <img class="img-fluid" style="background-size: 100% 100%;" src="./img/dj.jpg" alt="">
+
+            </div>
+            <div class="col m-3" style="background-color: #00AD8A;">
+                <div class="fidleee">
+                    <p class="text-center pt-5" style="font-size: 24px;"><strong> <br>02) Music training, <br>Audio
+                            services</strong></p>
+                </div>
+            </div>
+            <div class="col m-3">
+                <img class="img-fluid" style="background-size: 100% 100%;" src="./img/dj.jpg" alt="">
+
+            </div>
+
+            <div class="col m-3" style="background-color: #55acee;">
+                <div class="">
+                    <p class="text-center pt-5" style="font-size: 24px;"><strong> <br>04) Photography & <br>Lighting
+                            Solution</strong></p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!--section-->
+    <!--our services section-->
+    <section class="container">
+        <h1 class="text-center" style="font-weight: bold;">OUR SERVICES</h1>
+        <div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <p>
+                        <h3>a) Event & Music concert livestream</h3>
+                        <p> Sometimes you need to transcend physical settings and boundaries and bring your way of
+                            experience to the multitudes. Topsound will work with you to show your events across various
+                            social media platforms
+                            and ensure maximum visibility for your brand through our livestream services. We will
+                            broadcast
+                            your event to your target audience live.</p>
+                    </p>
+                    <p>
+                        <h3>b) Music training</h3>
+                        <p>We offer customized music training for our valued and esteemed clients. We use customized
+                            elements to help provide comprehensive music training for everyone.</p>
+                    </p>
+                    <p>
+                        <h3> c) Video & Photography</h3>
+                        <p>We will help you capture and document precious memories and stories of unforgettable personal
+                            and
+                            corporate events with specialized skills and experience.
+                            We are equipped with industry professional equipment and staff that will ensure continuity
+                            and
+                            professionalism.</p>
+                        <p> Our key clients and partners: Topsound Entertainment Co Ltd has worked with a wide range of
+                            clients which include Ministry of Education,
+                            United Nations, Safaricom, Tharaka University and Karatina University.</p>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <p>
+                        <h3>d) Video Display Solutions</h3>
+                        <p>We provide high-definition displays and innovative screen configurations.</p>
+                    </p>
+                    <p>
+                        <h3> e) Audio services</h3>
+                        <p> We offer indoor and outdoor top-of-the line audio equipment
+                            coupled with a specialist team of sound engineers & technicians that guarantees audience and
+                            client satisfaction. In addition, we have a variety of speakers, mixers, controllers, wired,
+                            wireless and specialty microphones, to ensure flexibility
+                            and clarity of sound throughout the event venue. </p>
+                    </p>
+                    <p>
+                        <h3> f) Lighting Solution</h3>
+                        <p> A remarkable collection of inventories to handle lighting solutions that heighten
+                            the
+                            event experience for your audience. Our experienced team will find the perfect
+                            solution for your event and stage lighting needs by connecting the power of artistic
+                            illumination, impact and emotion to big and small functions.</p>
+                    </p>
+                    <p>
+                        <h3>g ) Stagging</h3>
+                        <p> Staging Designs solutions include indoor and outdoor stages in all sizes and shapes
+                            for all kinds of events to suit our client’s needs, using only the very best materials to
+                            ensure
+                            the finished product will impress.</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--our services section-->
+    <!--footer-->
+    <section>
+        <div>
+            <!--footer-->
+            <footer style="background-image: url(./img/wave.jpg);">
+                <section style="height: 700px;">
+                    <div style="padding-left: 120px; color: white;">
+                        <div class="row" style="padding-top: 580px; ">
+                            <div class="col">
+                                <div>
+                                    <!--instagram-->
+                                    <a class="btn" style="background-color: #ac2bac;" href="#!" role="button">
+                                        <i style="" class="fab fa-instagram"></i>
+                                    </a>
+                                    @top_sound_photography
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!--phone number-->
+                                <a class="btn" style="background-color: #ec4a89;" href="#!" role="button">
+                                    <i style="" class="fa fa-phone"></i>
+                                </a>
+                                +254 716 500378
+                            </div>
+                            <div class="col">
+                                <!--whatsapp-->
+                                <a class="btn" style="background-color: #25d366;" href="#!" role="button">
+                                    <i style="" class="fab fa-whatsapp"></i>
+                                </a>
+                                +254 716 500378
+                            </div>
+                            <div class="col">
+                                <!--gmail-->
+                                <a class="btn" style="background-color: #0082ca;" href="#!" role="button">
+                                    <i style="" class="fa fa-envelope"></i>
+                                </a>
+                                topsoundvideoz@gmail.com
+                            </div>
+                        </div>
+                        <br>
+                        <!--second row-->
+                        <div class="row">
+                            <div class="col">
+                                <!--instagram-->
+                                <a class="btn" style="background-color: #d62976 " href="#!" role="button">
+                                    <i style="" class="fab fa-instagram"></i>
+                                </a>
+                                @topsound_entertainment_ke
+                            </div>
+                            <div class="col">
+                                <!--facebook-->
+                                <div>
+                                    <a class="btn" style="background-color: #3b5998;" href="#!" role="button">
+                                        <i style="" class="fab fa-facebook-f"></i>
+                                    </a> Topsound Entertaiment Ltd
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!--twitter-->
+                                <a class="btn" style="background-color: #55acee;" href="#!" role="button">
+                                    <i style="" class="fab fa-twitter"></i>
+                                </a>
+                                @TopsoundK
+                            </div>
+                            <div class="col">
+                                <!--url link-->
+                                <a class="btn" style="background-color: #AC6AE6;" href="#!" role="button">
+                                    <i class="fa-solid fa-globe"></i>
+                                </a>
+                                <a href="">www.topsound.co.ke</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                </section>
+            </footer>
+            <!--footer-->
+</body>
+
+</html>
+</div>
+</section>
+<!--footer-->
+<script src="script.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+<div class="brands">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="brands_slider_container">
+                    <div class="owl-carousel owl-theme brands_slider">
+                        <div class="owl-item">
+                            <div class="brands_item d-flex flex-column justify-content-center"><img
+                                    src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_1.jpg"
+                                    alt=""></div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="brands_item d-flex flex-column justify-content-center"><img
+                                    src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_2.jpg"
+                                    alt=""></div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="brands_item d-flex flex-column justify-content-center"><img
+                                    src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_4.jpg"
+                                    alt=""></div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="brands_item d-flex flex-column justify-content-center"><img
+                                    src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_5.jpg"
+                                    alt=""></div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="brands_item d-flex flex-column justify-content-center"><img
+                                    src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_3.jpg"
+                                    alt=""></div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="brands_item d-flex flex-column justify-content-center"><img
+                                    src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_6.jpg"
+                                    alt=""></div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="brands_item d-flex flex-column justify-content-center"><img
+                                    src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_7.jpg"
+                                    alt=""></div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="brands_item d-flex flex-column justify-content-center"><img
+                                    src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_8.jpg"
+                                    alt=""></div>
+                        </div>
+                    </div> <!-- Brands Slider Navigation -->
+                    <div class="brands_nav brands_prev"><i class="fas fa-chevron-left"></i></div>
+                    <div class="brands_nav brands_next"><i class="fas fa-chevron-right"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./scriptt.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid with Triangles</title>
+    <style>
+        /* Style for the container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+            grid-gap: 10px; /* Gap between columns and rows */
+            margin: 20px;
+        }
+
+        /* Style for each grid item */
+        .grid-item {
+            position: relative; /* To position the triangle */
+            background-color: #3498db; /* Default background color */
+            color: white; /* Text color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style for the triangle */
+        .triangle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent; /* Adjust the size as needed */
+            border-right: 20px solid transparent; /* Adjust the size as needed */
+            border-bottom: 40px solid #3498db; /* Match the background color */
+        }
+
+        /* Apply different background colors to specific columns */
+        .grid-item:nth-child(2) {
+            background-color: #e74c3c;
+        }
+
+        .grid-item:nth-child(3) {
+            background-color: #27ae60;
+        }
+
+        .grid-item:nth-child(4) {
+            background-color: #f39c12;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr; /* Single column on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="triangle"></div>
+            Column 1
+        </div>
+        <div class="grid-item">
+            <div class="triangle"></div>
+            Column 2
+        </div>
+        <div class="grid-item">
+            <div class="triangle"></div>
+            Column 3
+        </div>
+        <div class="grid-item">
+            <div class="triangle"></div>
+            Column 4
+        </div>
+        <div class="grid-item">
+            <div class="triangle"></div>
+            Column 5
+        </div>
+        <div class="grid-item">
+            <div class="triangle"></div>
+            Column 6
+        </div>
+        <div class="grid-item">
+            <div class="triangle"></div>
+            Column 7
+        </div>
+        <div class="grid-item">
+            <div class="triangle"></div>
+            Column 8
+        </div>
+    </div>
+</body>
+</html>

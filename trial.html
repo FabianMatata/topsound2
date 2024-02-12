@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sound Visualizer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Sound Visualizer</h1>
+        <canvas id="visualizer"></canvas>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            const canvas = document.getElementById('visualizer');
+            const ctx = canvas.getContext('2d');
+
+            // Set up the audio context
+            const AudioContext = window.AudioContext || window.webkitAudioContext;
+            const audioCtx = new AudioContext();
+
+            // Create an analyser node
+            const analyser = audioCtx.createAnalyser();
+            analyser.fftSize = 256;
+            const bufferLength = analyser.frequencyBinCount;
+            const dataArray = new Uint8Array(bufferLength);
+
+            // Connect the analyser to the audio source
+            const audio = new Audio();
+            audio.src = 'path_to_your_audio_file.mp3'; // Replace with your audio file
+            audio.crossOrigin = 'anonymous';
+            const source = audioCtx.createMediaElementSource(audio);
+            source.connect(analyser);
+            analyser.connect(audioCtx.destination);
+
+            // Function to render the visualizer
+            function render() {
+                requestAnimationFrame(render);
+
+                analyser.getByteFrequencyData(dataArray);
+
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                const barWidth = canvas.width / bufferLength;
+                let x = 0;
+
+                for (let i = 0; i < bufferLength; i++) {
+                    const barHeight = dataArray[i] * canvas.height / 255;
+
+                    ctx.fillStyle = 'rgb(' + (barHeight + 100) + ',50,50)';
+                    ctx.fillRect(x, canvas.height - barHeight, barWidth, barHeight);
+
+                    x += barWidth + 1;
+                }
+            }
+
+            // Start playing the audio and rendering the visualizer
+            audio.play();
+            render();
+        });
+    </script>
+</body>
+
+</html>
